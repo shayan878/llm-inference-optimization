@@ -1,0 +1,37 @@
+name: Bug report
+description: Report a reproducible issue with the benchmark client or deployment helpers.
+title: "bug: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please remove credentials, private paths, private model data, and other sensitive information before submitting logs.
+  - type: textarea
+    id: observed
+    attributes:
+      label: What happened?
+      description: Describe the observed behaviour and the expected behaviour.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include the exact command and a minimal reproduction where possible.
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Software versions
+      description: OS, Python, Docker, vLLM, CUDA, and NVIDIA driver versions.
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU hardware
+      description: Exact GPU model and VRAM.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      render: text

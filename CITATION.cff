@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+title: "vLLM Inference Lab"
+authors:
+  - family-names: Daneshyar
+    given-names: Shayan
+version: 0.1.0
+date-released: 2026-11-06
+url: https://github.com/shayan878/vllm-inference-lab
+license: MIT

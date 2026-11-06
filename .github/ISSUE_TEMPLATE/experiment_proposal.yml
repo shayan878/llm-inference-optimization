@@ -1,0 +1,39 @@
+name: Experiment proposal
+description: Propose a controlled inference or GPU-memory experiment.
+title: "experiment: "
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Research question
+      description: What do you want this experiment to establish?
+    validations:
+      required: true
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothesis
+      description: State the expected outcome and why.
+    validations:
+      required: true
+  - type: textarea
+    id: setup
+    attributes:
+      label: Hardware and software setup
+      description: GPU SKU/count, memory, driver, CUDA, vLLM, framework, and model revision.
+    validations:
+      required: true
+  - type: textarea
+    id: controls
+    attributes:
+      label: Controlled variables
+      description: Prompt, output limit, concurrency, warmups, repetitions, and other fixed settings.
+    validations:
+      required: true
+  - type: textarea
+    id: metrics
+    attributes:
+      label: Metrics and acceptance criteria
+      description: Define the measurements and what result would support or reject the hypothesis.
+    validations:
+      required: true
